@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+.bg-gradient{
+ /* global 92%+ browsers support */
+ background: radial-gradient(circle at 21% 25%, rgba(1, 38, 78, 1) 0%, rgba(4, 12, 24, 1) 100%);}
+
+.bg-gradient-reverse{
+ /* global 92%+ browsers support */
+ background: radial-gradient(circle at 71% 11%, #06223F 68%, #124D8D 95%);
+ 
+}
+ 
+ .common-padding{
+  @apply px-5 pb-5 pt-7 sm:px-16 md:px-12 lg:px-14 lg:py-10 xl:px-36 
+}
+
+.btn{
+  @apply px-5 bg-orange-dark mx-1 rounded-lg py-2 font-Manrope hover:opacity-80
+}
+
+
+.gradient_text{
+  @apply text-2xl md:text-3xl xl:text-6xl lg:text-5xl font-Manrope font-extrabold  bg-gradient-to-r from-[#ad67f9]  to-[#f1966d] bg-clip-text text-transparent
+}
+
+
+.whatGpt-bg{
+  /* background: linear-gradient(337deg, #1973D6CF 0%, #042C54 15%, #0F4178 93%); */
+
+  background: linear-gradient(336deg, #1973D6CF 3%, #1F5D9D 12%, #0A325D 24%, #124D8D 77%);
+
+
+
+
+}
+
+.bg-card{
+  background: linear-gradient(35deg, #AE67FA 1%, #F49867 95%)
+}
+
+
+.card-a{
+  @apply  justify-end flex-1 cursor-pointer hover:text-gray-500 font-Manrope text-[11px] text-gray-100 
+}
+
+
+.card-title{
+  @apply font-Manrope font-extrabold mt-1 text-base lg:text-2xl text-white  my-7 
+}
+
+.card-date{
+  @apply font-bold font-Manrope text-[11px] text-gray-100
+}
